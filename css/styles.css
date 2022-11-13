@@ -129,6 +129,8 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current:hover,
@@ -167,6 +169,8 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-block .contacts:hover,
@@ -231,8 +235,10 @@ address {
   border-width: 0;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* section */
 
@@ -389,6 +395,9 @@ address {
   border-radius: 50%;
   background-color: #ffffff;
   color: #afb1b8;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -421,6 +430,8 @@ address {
   justify-content: center;
   align-items: center;
   color: #afb1b8;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients .clients-icon {
@@ -449,6 +460,7 @@ address {
 
 .projects-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-link:hover,
@@ -536,6 +548,9 @@ address {
   border-width: 0;
   border-radius: 4px;
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -575,6 +590,8 @@ address {
 .address-link {
   color: var(--primary-white-color);
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -584,6 +601,8 @@ address {
 .footer-contacts {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
@@ -627,6 +646,8 @@ address {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social .social-icon {
@@ -664,8 +685,9 @@ address {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  
-  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -693,7 +715,6 @@ address {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.9);
 }
-
 
 .modal-btn {
   position: absolute;
